@@ -47,7 +47,7 @@ const LanguageSwitcher = () => {
         <div className="relative" ref={dropdownRef}>
             <div
                 onClick={() => setOpen((prev) => !prev)}
-                className={`flex items-center gap-2.5 p-1.5 h-[42px] rounded-xl cursor-pointer transition-all duration-300 border select-none ${open
+                className={`flex items-center gap-2.5 p-1.5 h-10.5 rounded-xl cursor-pointer transition-all duration-300 border select-none ${open
                     ? "bg-slate-50 dark:bg-white/10 dark:border-white/10 text-primary border-slate-200 shadow-xs"
                     : "bg-transparent text-slate-700 border-transparent hover:border-slate-200 hover:bg-slate-50 dark:hover:bg-white/10 active:scale-95"
                     }`}
