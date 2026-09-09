@@ -52,7 +52,7 @@ const Sidebar = () => {
                     fontSize={24}
                     className="text-black dark:text-white font-bold"
                 />
-                <p className="ms-1 text-left w-full font-bold text-black dark:text-white" >{t("sidebar.admin_panel")}</p>
+                <p className="ms-1 text-start w-full font-bold text-black dark:text-white" >{t("sidebar.admin_panel")}</p>
             </div>
             <div
                 className="text-left [&>p]:w-full [&>p]:ps-4 [&>p]:cursor-pointer text-black dark:text-white w-full flex flex-col items-center justify-center gap-3 p-4"

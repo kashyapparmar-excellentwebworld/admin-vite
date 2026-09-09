@@ -6,6 +6,7 @@ const IconComponent = ({
     width,
     className,
     fontSize = 24,
+    rotate,
     onClick
 }: {
     icon: string,
@@ -13,6 +14,7 @@ const IconComponent = ({
     width?: number,
     className?: string,
     fontSize?: number,
+    rotate?: number,
     onClick?: any
 }) => {
     return (
@@ -23,6 +25,7 @@ const IconComponent = ({
             className={className}
             fontSize={fontSize}
             onClick={onClick}
+            rotate={rotate}
         />
     )
 }

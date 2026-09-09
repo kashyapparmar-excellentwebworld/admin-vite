@@ -2057,5 +2057,8 @@
     "stored_sessions": "STORED CHAT SESSIONS",
     "assistant_title": "Multilingual AI Support Assistant",
     "input_placeholder": "Ask a question in English, Arabic..."
+  },
+  "user_management": {
+    "title": "User Management"
   }
 }
