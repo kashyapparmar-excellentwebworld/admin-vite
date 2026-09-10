@@ -10,7 +10,7 @@ function TableCell({ children, className = "", colSpan }: TableCellProps) {
     return (
         <td
             colSpan={colSpan}
-            className={`px-4 py-3 text-sm text-slate-700 dark:text-slate-200 ${className}`}
+            className={`px-4 py-3 text-sm text-black dark:text-white ${className}`}
         >
             {children}
         </td>

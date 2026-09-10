@@ -2059,10 +2059,23 @@
     "input_placeholder": "Ask a question in English, Arabic..."
   },
   "user_management": {
-    "title": "User Management"
+    "title": "User Management",
+    "table_head": {
+      "id": "id",
+      "name": "name",
+      "email": "category",
+      "role": "brand",
+      "status": "price"
+    },
+    "search": "search"
   },
   "product_management": {
     "title": "Product Management",
+    "table_title": "Product Table",
+    "upload_title": "Upload product file",
+    "dnd_title": "Drag and drop your file here, or",
+    "browse": "browse",
+    "file_type_info": "PNG, JPG, PDF up to 10MB.",
     "table_head": {
       "id": "id",
       "name": "name",
@@ -2071,5 +2084,15 @@
       "price": "price"
     },
     "search": "search"
+  },
+  "table": {
+    "row_per_page": "Rows Per Page",
+    "showing": "Showing",
+    "to": "to",
+    "of": "of",
+    "records": "records",
+    "next": "next",
+    "prev": "Prev",
+    "no_record": "No records found."
   }
 }

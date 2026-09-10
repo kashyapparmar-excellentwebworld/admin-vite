@@ -1,3 +1,5 @@
+import { useTranslation } from "react-i18next";
+
 interface TablePaginationProps {
     currentPage: number;
     totalPages: number;
@@ -17,17 +19,18 @@ function TablePagination({
     onPageSizeChange,
     pageSizeOptions = [5, 10, 20, 50],
 }: TablePaginationProps) {
+    const { t } = useTranslation();
     return (
         <div className="flex flex-col sm:flex-row items-center justify-between gap-4 px-2 py-3 text-sm text-slate-600 dark:text-slate-400">
             <div>
-                Showing {Math.min((currentPage - 1) * pageSize + 1, totalRecords)} to{" "}
-                {Math.min(currentPage * pageSize, totalRecords)} of {totalRecords} records
+                {t("table.showing")} {Math.min((currentPage - 1) * pageSize + 1, totalRecords)} {t("table.to")}{" "}
+                {Math.min(currentPage * pageSize, totalRecords)} {t("table.of")} {totalRecords} {t("table.records")}
             </div>
 
             <div className="flex items-center gap-6">
                 {/* Rows per page */}
                 <div className="flex items-center gap-2">
-                    <span>Rows per page:</span>
+                    <span>{t("table.row_per_page")} :</span>
                     <select
                         value={pageSize}
                         onChange={(e) => onPageSizeChange(Number(e.target.value))}
@@ -46,9 +49,9 @@ function TablePagination({
                     <button
                         disabled={currentPage === 1}
                         onClick={() => onPageChange(currentPage - 1)}
-                        className="px-3 py-1 border rounded disabled:opacity-40 disabled:cursor-not-allowed hover:bg-slate-100 dark:hover:bg-slate-800"
+                        className="px-3 py-1 border rounded capitalize disabled:opacity-40 disabled:cursor-not-allowed hover:bg-slate-100 dark:hover:bg-slate-800"
                     >
-                        Prev
+                        {t("table.prev")}
                     </button>
                     <span>
                         {currentPage} / {totalPages || 1}
@@ -56,9 +59,9 @@ function TablePagination({
                     <button
                         disabled={currentPage >= totalPages}
                         onClick={() => onPageChange(currentPage + 1)}
-                        className="px-3 py-1 border rounded disabled:opacity-40 disabled:cursor-not-allowed hover:bg-slate-100 dark:hover:bg-slate-800"
+                        className="px-3 py-1 border rounded capitalize disabled:opacity-40 disabled:cursor-not-allowed hover:bg-slate-100 dark:hover:bg-slate-800"
                     >
-                        Next
+                        {t("table.next")}
                     </button>
                 </div>
             </div>

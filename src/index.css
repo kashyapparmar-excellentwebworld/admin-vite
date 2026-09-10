@@ -11,3 +11,53 @@
   margin: 0;
   padding: 0;
 }
+
+@layer utilities {
+
+  /* 1. Define scrollbar colors for light theme */
+  :root {
+    --scrollbar-track: #f1f5f9;
+    /* Light gray track */
+    --scrollbar-thumb: #94a3b8;
+    /* Slate thumb */
+    --scrollbar-thumb-hover: #64748b;
+    /* Darker slate on hover */
+  }
+
+  /* 2. Override colors when dark mode is active */
+  .dark {
+    --scrollbar-track: #090d16;
+    /* Dark background track */
+    --scrollbar-thumb: #334155;
+    /* Dark thumb */
+    --scrollbar-thumb-hover: #475569;
+    /* Lighter thumb on hover */
+  }
+
+  /* 3. Global custom scrollbar rule using CSS variables */
+  .scrollbar-thin {
+    /* Standard for Firefox */
+    scrollbar-width: thin;
+    scrollbar-color: var(--scrollbar-thumb) var(--scrollbar-track);
+  }
+
+  /* WebKit (Chrome, Safari, Edge) */
+  .scrollbar-thin::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+
+  .scrollbar-thin::-webkit-scrollbar-track {
+    background: var(--scrollbar-track);
+    border-radius: 4px;
+  }
+
+  .scrollbar-thin::-webkit-scrollbar-thumb {
+    background: var(--scrollbar-thumb);
+    border-radius: 4px;
+  }
+
+  .scrollbar-thin::-webkit-scrollbar-thumb:hover {
+    background: var(--scrollbar-thumb-hover);
+  }
+}

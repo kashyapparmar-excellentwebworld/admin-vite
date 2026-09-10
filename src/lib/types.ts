@@ -28,7 +28,7 @@ export type loginFormData = yup.InferType<typeof loginSchema>;
 
 export type SortOrder = "asc" | "desc" | null;
 
-export interface Column<T> {
+export interface ColumnType<T> {
     key: keyof T | string;
     label: string;
     sortable?: boolean;
@@ -36,7 +36,7 @@ export interface Column<T> {
 }
 
 export interface TableHeaderProps<T> {
-    columns: Column<T>[];
+    columns: ColumnType<T>[];
     sortColumn: keyof T | string | null;
     sortOrder: SortOrder;
     onSort: (key: keyof T | string) => void;
@@ -51,7 +51,7 @@ export interface User {
     status: "Active" | "Inactive";
 }
 
-export interface Product {
+export interface ProductType {
     id: number;
     name: string;
     category: string;
@@ -61,7 +61,7 @@ export interface Product {
 
 
 export interface DataTableProps<T> {
-    columns: Column<T>[];
+    columns: ColumnType<T>[];
     data: T[];
     searchPlaceholder?: string;
     initialPageSize?: number;

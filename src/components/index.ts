@@ -9,3 +9,4 @@ export { default as TableRow } from "./table/TableRow";
 export { default as TableCell } from "./table/TableCell";
 export { default as TableSearch } from "./table/TableSearch";
 export { default as TablePagination } from "./table/TablePagination";
+export { default as UploadFile } from "./ui/upload";

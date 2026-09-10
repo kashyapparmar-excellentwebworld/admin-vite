@@ -1,9 +1,17 @@
 import type { Product, User } from "./types";
 
+export const MAX_FILE_SIZE = 10 * 1024 * 1024;
 export const PUBLIC_ROUTES = ["/login", "/signup", "/forgot-password"];
 export const validCreds = {
     email: "user@example.com"
 }
+
+export const ALLOWED_FILE_TYPES = [
+    'image/jpeg',
+    'image/png',
+    'image/webp',
+    'application/pdf',
+];
 
 export const users: User[] = [
     { id: 1, name: "Alice Johnson", email: "alice@example.com", role: "Admin", status: "Active" },

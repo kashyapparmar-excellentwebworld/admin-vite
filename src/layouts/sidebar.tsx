@@ -14,7 +14,7 @@ const sidebarOptions = [
         label: "Users",
         translationKey: "sidebar.users",
         path: "/users",
-        icon: "heroicons:users",
+        icon: "cuida:users-outline",
         slug: "/users",
     },
     {

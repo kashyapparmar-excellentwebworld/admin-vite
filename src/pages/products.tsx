@@ -1,10 +1,10 @@
 import { useTranslation } from "react-i18next";
 import { DataTable } from "@/components/table";
-import type { Column, Product } from "@/lib/types";
-import { products } from "@/lib/constants";
-import { Card } from "@/components";
+import type { ColumnType, ProductType } from "@/lib/types";
+import { ALLOWED_FILE_TYPES, products } from "@/lib/constants";
+import { Card, UploadFile } from "@/components";
 
-const columns: Column<Product>[] = [
+const columns: ColumnType<ProductType>[] = [
     { key: "id", label: "product_management.table_head.id", sortable: true },
     { key: "name", label: "product_management.table_head.name", sortable: true },
     { key: "category", label: "product_management.table_head.category", sortable: true },
@@ -21,13 +21,19 @@ const columns: Column<Product>[] = [
 
 const ProductManagement = () => {
     const { t } = useTranslation();
+
     return (
-        <div className="p-4" >
+        <div className="p-4 flex flex-col gap-4" >
             <Card className="flex flex-col gap-3" >
                 <h1 className="text-2xl font-bold dark:text-white">{t("product_management.title")}</h1>
-                <div>
-                    <DataTable columns={columns} data={products} initialPageSize={5} />
-                </div>
+                <UploadFile
+                    title={t("product_management.upload_title")}
+                    allowFileType={ALLOWED_FILE_TYPES}
+                />
+            </Card>
+            <Card className="flex flex-col gap-3" >
+                <p className="text-xl font-bold dark:text-white">{t("product_management.table_title")}</p>
+                <DataTable columns={columns} data={products} initialPageSize={5} />
             </Card>
         </div>
     )

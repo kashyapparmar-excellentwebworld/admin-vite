@@ -31,8 +31,8 @@ const Header = () => {
     }
 
     return (
-        <div id="header" className="shadow-2xl dark:bg-black h-fit p-4 w-full flex justify-between items-center" >
-            <div className="dark:text-white h-fit" >{t("common.welcome")}</div>
+        <div id="header" className="shadow-2xl dark:bg-black h-fit p-4 w-full flex justify-end items-center" >
+            {/* <div className="dark:text-white h-fit" >{t("common.welcome")}</div> */}
             <div className="flex gap-4 items-center" >
                 <Icon
                     icon={theme === "light" ? "ant-design:moon-outlined" : "ant-design:sun-outlined"}

@@ -5,6 +5,7 @@ import TableCell from "./TableCell";
 import TableSearch from "./TableSearch";
 import TablePagination from "./TablePagination";
 import type { DataTableProps, SortOrder } from "@/lib/types";
+import { useTranslation } from "react-i18next";
 
 export function DataTable<T extends Record<string, any>>({
     columns,
@@ -18,6 +19,7 @@ export function DataTable<T extends Record<string, any>>({
     const [sortOrder, setSortOrder] = useState<SortOrder>(null);
     const [currentPage, setCurrentPage] = useState(1);
     const [pageSize, setPageSize] = useState(initialPageSize);
+    const { t } = useTranslation();
 
     // 1. Filter logic (Global search)
     const filteredData = useMemo(() => {
@@ -103,7 +105,7 @@ export function DataTable<T extends Record<string, any>>({
                         sortOrder={sortOrder}
                         onSort={handleSort}
                     />
-                    <tbody className="divide-y divide-slate-200 dark:divide-slate-700">
+                    <tbody className="divide-y divide-slate-200 overflow-auto h-57 dark:divide-slate-700">
                         {paginatedData.length > 0 ? (
                             paginatedData.map((row, index) => (
                                 <TableRow
@@ -123,9 +125,9 @@ export function DataTable<T extends Record<string, any>>({
                             <TableRow>
                                 <TableCell
                                     colSpan={columns.length}
-                                    className="text-center py-8 text-slate-400"
+                                    className="text-center py-8 text-black dark:text-white"
                                 >
-                                    No records found.
+                                    {t("table.no_record")}
                                 </TableCell>
                             </TableRow>
                         )}

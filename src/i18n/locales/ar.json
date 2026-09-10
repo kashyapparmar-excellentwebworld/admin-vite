@@ -2038,17 +2038,40 @@
     "input_placeholder": "اطرح سؤالاً باللغة العربية أو الإنجليزية..."
   },
   "user_management": {
-    "title": "إدارة المستخدمين"
+    "title": "إدارة المستخدمين",
+    "search": "search",
+    "table_head": {
+      "id": "بطاقة تعريف",
+      "name": "اسم",
+      "email": "بريد إلكتروني",
+      "role": "دور",
+      "status": "حالة"
+    }
   },
   "product_management": {
     "title": "إدارة المنتجات",
+    "table_title": "جدول المنتجات",
+    "upload_title": "تحميل ملف المنتج",
+    "dnd_title": "اسحب ملفك وأفلته هنا، أو",
+    "browse": "تصفح",
+    "file_type_info": "PDF، PNG، JPG، بحد أقصى 10 ميجابايت.",
+    "search": "يبحث",
     "table_head": {
       "id": "بطاقة تعريف",
       "name": "اسم",
       "category": "فئة",
       "brand": "ماركة",
       "price": "سعر"
-    },
-    "search": "يبحث"
+    }
+  },
+  "table": {
+    "row_per_page": "عدد الصفوف في الصفحة",
+    "showing": "عرض السجلات من",
+    "to": "إلى",
+    "of": "من أصل",
+    "records": "سجلاً",
+    "next": "التالي",
+    "prev": "السابق",
+    "no_record": "لم يتم العثور على سجلات."
   }
 }
