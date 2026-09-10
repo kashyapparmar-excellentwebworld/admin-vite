@@ -4,3 +4,8 @@ export { default as Icon } from './ui/icon';
 export { default as LanguageToggle } from './ui/LanguageToggle';
 export { default as Loader } from './loder';
 export { default as Card } from './ui/card';
+export { default as TableHeader } from "./table/TableHeader";
+export { default as TableRow } from "./table/TableRow";
+export { default as TableCell } from "./table/TableCell";
+export { default as TableSearch } from "./table/TableSearch";
+export { default as TablePagination } from "./table/TablePagination";

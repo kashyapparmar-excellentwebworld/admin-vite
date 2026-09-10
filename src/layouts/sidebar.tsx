@@ -61,7 +61,7 @@ const Sidebar = () => {
                     <Link
                         key={idx}
                         to={el?.path}
-                        className={`${pathname === el?.path ? "bg-gray-500" : ""} py-1 ps-4 rounded-lg w-full outline-0 flex items-center gap-2`}
+                        className={`${pathname === el?.path ? "bg-gray-500 text-white" : ""} py-1 ps-4 rounded-lg w-full outline-0 flex items-center gap-2`}
                     >
                         <Icon icon={el?.icon} fontSize={20} />
                         {t(el?.translationKey)}

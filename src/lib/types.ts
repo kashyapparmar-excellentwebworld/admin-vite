@@ -25,3 +25,45 @@ export const loginSchema = yup.object({
 });
 
 export type loginFormData = yup.InferType<typeof loginSchema>;
+
+export type SortOrder = "asc" | "desc" | null;
+
+export interface Column<T> {
+    key: keyof T | string;
+    label: string;
+    sortable?: boolean;
+    render?: (row: T) => React.ReactNode;
+}
+
+export interface TableHeaderProps<T> {
+    columns: Column<T>[];
+    sortColumn: keyof T | string | null;
+    sortOrder: SortOrder;
+    onSort: (key: keyof T | string) => void;
+}
+
+
+export interface User {
+    id: number;
+    name: string;
+    email: string;
+    role: string;
+    status: "Active" | "Inactive";
+}
+
+export interface Product {
+    id: number;
+    name: string;
+    category: string;
+    price: number;
+    brand: string;
+}
+
+
+export interface DataTableProps<T> {
+    columns: Column<T>[];
+    data: T[];
+    searchPlaceholder?: string;
+    initialPageSize?: number;
+    onRowClick?: (row: T) => void;
+}

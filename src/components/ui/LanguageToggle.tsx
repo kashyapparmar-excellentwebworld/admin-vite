@@ -77,9 +77,10 @@ const LanguageSwitcher = () => {
                             <button
                                 key={lang.lng}
                                 onClick={() => changeLanguage(lang.lng)}
-                                className={`w-full flex items-center justify-between gap-3 px-3 py-2.5 rounded-xl transition-all duration-200 cursor-pointer ${isActive
-                                    ? "bg-primary/5 hover:bg-primary/10 dark:text-white"
-                                    : "hover:bg-slate-50 dark:hover:bg-white/10"
+                                className={`w-full flex items-center justify-between gap-3 px-3 py-2.5 rounded-xl transition-all duration-200 cursor-pointer 
+                                    ${isActive
+                                        ? "bg-primary/5 hover:bg-primary/10"
+                                        : "hover:bg-slate-50 dark:hover:bg-white/10 dark:text-white"
                                     }`}
                             >
                                 <div className="flex items-center gap-3">
@@ -91,8 +92,8 @@ const LanguageSwitcher = () => {
                                     <div className="flex flex-col text-start">
                                         <span
                                             className={`text-sm ${isActive
-                                                ? "font-bold text-primary"
-                                                : "font-semibold text-slate-700"
+                                                ? "font-semibold text-slate-700"
+                                                : "font-bold dark:text-white text-black"
                                                 }`}
                                         >
                                             {lang.name}

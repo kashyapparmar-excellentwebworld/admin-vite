@@ -35,7 +35,7 @@ const Header = () => {
             <div className="dark:text-white h-fit" >{t("common.welcome")}</div>
             <div className="flex gap-4 items-center" >
                 <Icon
-                    icon="icon-park-outline:theme"
+                    icon={theme === "light" ? "ant-design:moon-outlined" : "ant-design:sun-outlined"}
                     className="cursor-pointer dark:text-white"
                     fontSize={18}
                     onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
@@ -61,7 +61,7 @@ const Header = () => {
                         >
                             <div
                                 onClick={handleLogout}
-                                className="flex gap-2 items-center hover:bg-black/10 w-full py-1 px-4 rounded-xl"
+                                className="flex gap-2 items-center hover:bg-black/10 dark:text-white dark:hover:bg-white/10 w-full py-1 px-4 rounded-xl"
                             >
                                 <Icon
                                     icon={"cuida:logout-outline"}

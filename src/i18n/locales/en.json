@@ -2060,5 +2060,16 @@
   },
   "user_management": {
     "title": "User Management"
+  },
+  "product_management": {
+    "title": "Product Management",
+    "table_head": {
+      "id": "id",
+      "name": "name",
+      "category": "category",
+      "brand": "brand",
+      "price": "price"
+    },
+    "search": "search"
   }
 }

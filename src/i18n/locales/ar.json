@@ -2039,5 +2039,16 @@
   },
   "user_management": {
     "title": "إدارة المستخدمين"
+  },
+  "product_management": {
+    "title": "إدارة المنتجات",
+    "table_head": {
+      "id": "بطاقة تعريف",
+      "name": "اسم",
+      "category": "فئة",
+      "brand": "ماركة",
+      "price": "سعر"
+    },
+    "search": "يبحث"
   }
 }
