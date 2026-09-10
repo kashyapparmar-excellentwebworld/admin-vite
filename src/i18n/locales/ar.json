@@ -1,6 +1,10 @@
 {
   "common": {
     "dashboard": "لوحة القيادة",
+    "upload_title": "تحميل ملف المنتج",
+    "dnd_title": "اسحب ملفك وأفلته هنا، أو",
+    "browse": "تصفح",
+    "file_type_info": "Audio، Video، PDF، PNG، JPG، بحد أقصى 10 ميجابايت.",
     "vehicles": "المركبات",
     "drivers": "السائقين",
     "customers": "العملاء",
@@ -2051,10 +2055,6 @@
   "product_management": {
     "title": "إدارة المنتجات",
     "table_title": "جدول المنتجات",
-    "upload_title": "تحميل ملف المنتج",
-    "dnd_title": "اسحب ملفك وأفلته هنا، أو",
-    "browse": "تصفح",
-    "file_type_info": "PDF، PNG، JPG، بحد أقصى 10 ميجابايت.",
     "search": "يبحث",
     "table_head": {
       "id": "بطاقة تعريف",

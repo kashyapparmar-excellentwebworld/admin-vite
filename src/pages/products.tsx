@@ -27,7 +27,7 @@ const ProductManagement = () => {
             <Card className="flex flex-col gap-3" >
                 <h1 className="text-2xl font-bold dark:text-white">{t("product_management.title")}</h1>
                 <UploadFile
-                    title={t("product_management.upload_title")}
+                    title={t("common.upload_title")}
                     allowFileType={ALLOWED_FILE_TYPES}
                 />
             </Card>

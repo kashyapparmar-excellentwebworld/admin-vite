@@ -79,11 +79,11 @@ const UploadFile = ({
                 >
                     <Icon fontSize={40} icon="basil:cloud-upload-outline" />
                     <p className="text-black dark:text-white font-semibold text-sm mb-2" >
-                        {t("product_management.dnd_title")}{' '}
-                        <span className="text-blue-600 font-semibold underline">{t("product_management.browse")}</span>
+                        {t("common.dnd_title")}{' '}
+                        <span className="text-blue-600 font-semibold underline">{t("common.browse")}</span>
                     </p>
                     <p className="text-xs text-slate-400" >
-                        {t("product_management.file_type_info")}
+                        {t("common.file_type_info")}
                     </p>
                 </div>
             </div> : <div className="flex gap-4 justify-start items-center w-fit">

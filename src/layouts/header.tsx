@@ -7,7 +7,7 @@ import { useAppDispatch } from "@/hooks/redux";
 
 const Header = () => {
     const { setTheme, theme } = useTheme();
-    const { t, i18n } = useTranslation();
+    const { i18n } = useTranslation();
     const [open, setOpen] = useState(false);
     const dropdownRef = useRef<HTMLDivElement>(null);
     const isAr = i18n.language === "ar";

@@ -1,6 +1,10 @@
 {
   "common": {
     "dashboard": "Dashboard",
+    "upload_title": "Upload product file",
+    "dnd_title": "Drag and drop your file here, or",
+    "browse": "browse",
+    "file_type_info": "Audio, Video, PNG, JPG, PDF up to 10MB.",
     "vehicles": "Vehicles",
     "drivers": "Drivers",
     "customers": "Customers",
@@ -2072,10 +2076,6 @@
   "product_management": {
     "title": "Product Management",
     "table_title": "Product Table",
-    "upload_title": "Upload product file",
-    "dnd_title": "Drag and drop your file here, or",
-    "browse": "browse",
-    "file_type_info": "PNG, JPG, PDF up to 10MB.",
     "table_head": {
       "id": "id",
       "name": "name",

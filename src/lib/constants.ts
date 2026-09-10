@@ -1,4 +1,4 @@
-import type { Product, User } from "./types";
+import type { ProductType, User } from "./types";
 
 export const MAX_FILE_SIZE = 10 * 1024 * 1024;
 export const PUBLIC_ROUTES = ["/login", "/signup", "/forgot-password"];
@@ -11,6 +11,15 @@ export const ALLOWED_FILE_TYPES = [
     'image/png',
     'image/webp',
     'application/pdf',
+    // Audio
+    'audio/mpeg',  // .mp3
+    'audio/wav',   // .wav
+    'audio/ogg',   // .ogg
+    'audio/aac',   // .aac
+    // Video
+    'video/mp4',   // .mp4
+    'video/webm',  // .webm
+    'video/ogg',   // .ogv
 ];
 
 export const users: User[] = [
@@ -31,7 +40,7 @@ export const users: User[] = [
     { id: 15, name: "Charlie Brown", email: "charlie@test.com", role: "Editor", status: "Active" },
 ];
 
-export const products: Product[] = [
+export const products: ProductType[] = [
     {
         id: 1,
         name: "Iphone",
