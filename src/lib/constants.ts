@@ -3,7 +3,8 @@ import type { ProductType, User } from "./types";
 export const MAX_FILE_SIZE = 10 * 1024 * 1024;
 export const PUBLIC_ROUTES = ["/login", "/signup", "/forgot-password"];
 export const validCreds = {
-    email: "user@example.com"
+    email: "user@example.com",
+    password: "Test@1234"
 }
 
 export const ALLOWED_FILE_TYPES = [

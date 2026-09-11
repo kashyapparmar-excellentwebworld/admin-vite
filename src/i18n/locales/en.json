@@ -2077,9 +2077,9 @@
     "table_head": {
       "id": "id",
       "name": "name",
-      "email": "category",
-      "role": "brand",
-      "status": "price"
+      "email": "email",
+      "role": "role",
+      "status": "status"
     },
     "search": "search"
   },

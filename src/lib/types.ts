@@ -24,7 +24,65 @@ export const loginSchema = yup.object({
     //     .oneOf([yup.ref("password")], "Passwords do not match"),
 });
 
+export const forgotPassword = yup.object({
+    email: yup
+        .string()
+        .required("Email is required")
+        .email("Please enter a valid email address"),
+    newPassword: yup
+        .string()
+        .required("New Password is required")
+        .min(8, "Password must be at least 8 characters")
+        .matches(
+            /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)/,
+            "Password must contain at least 1 uppercase letter, 1 lowercase letter, and 1 number"
+        ),
+    confirmPassword: yup
+        .string()
+        .required("Confirm password is required")
+        .min(8, "Password must be at least 8 characters")
+        .matches(
+            /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)/,
+            "Password must contain at least 1 uppercase letter, 1 lowercase letter, and 1 number"
+        ).oneOf([yup.ref('newPassword')], "Confirm password must match with new password")
+});
+
+export const resetPassword = yup.object({
+    email: yup
+        .string()
+        .required("Email is required")
+        .email("Please enter a valid email address"),
+    oldPassword: yup
+        .string()
+        .required("Old Password is required")
+        .min(8, "Old Password must be at least 8 characters")
+        .matches(
+            /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)/,
+            "Password must contain at least 1 uppercase letter, 1 lowercase letter, and 1 number"
+        ),
+    newPassword: yup
+        .string()
+        .required("New Password is required")
+        .min(8, "Password must be at least 8 characters")
+        .matches(
+            /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)/,
+            "Password must contain at least 1 uppercase letter, 1 lowercase letter, and 1 number"
+        ),
+    confirmPassword: yup
+        .string()
+        .required("Confirm password is required")
+        .min(8, "Password must be at least 8 characters")
+        .matches(
+            /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)/,
+            "Password must contain at least 1 uppercase letter, 1 lowercase letter, and 1 number"
+        ).oneOf([yup.ref('newPassword')], "Confirm password must match with new password")
+});
+
 export type loginFormData = yup.InferType<typeof loginSchema>;
+
+export type forgotPasswordType = yup.InferType<typeof forgotPassword>;
+
+export type resetPasswordType = yup.InferType<typeof resetPassword>;
 
 export type SortOrder = "asc" | "desc" | null;
 

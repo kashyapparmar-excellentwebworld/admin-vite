@@ -1,10 +1,10 @@
 import { useTranslation } from "react-i18next";
 import { DataTable } from "@/components/table";
-import type { Column, User } from "@/lib/types";
+import type { ColumnType, User } from "@/lib/types";
 import { users } from "@/lib/constants";
 import { Card } from "@/components";
 
-const columns: Column<User>[] = [
+const columns: ColumnType<User>[] = [
     { key: "id", label: "user_management.table_head.id", sortable: true },
     { key: "name", label: "user_management.table_head.name", sortable: true },
     { key: "email", label: "user_management.table_head.email", sortable: true },

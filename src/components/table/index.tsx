@@ -105,7 +105,7 @@ export function DataTable<T extends Record<string, any>>({
                         sortOrder={sortOrder}
                         onSort={handleSort}
                     />
-                    <tbody className="divide-y divide-slate-200 overflow-auto h-57 dark:divide-slate-700">
+                    <tbody className="divide-y divide-slate-200 overflow-auto dark:divide-slate-700">
                         {paginatedData.length > 0 ? (
                             paginatedData.map((row, index) => (
                                 <TableRow
