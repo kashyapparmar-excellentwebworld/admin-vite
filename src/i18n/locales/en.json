@@ -463,7 +463,8 @@
     "yesterday": "Yesterday",
     "previous_n_days": "previous {{n}} days",
     "total_all_time": "Total all time",
-    "vs_previous_period": "vs {{label}} ({{value}})"
+    "vs_previous_period": "vs {{label}} ({{value}})",
+    "active_users_growth": "Active Users Growth"
   },
   "customers": {
     "title": "Customers",

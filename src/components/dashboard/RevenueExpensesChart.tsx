@@ -12,6 +12,7 @@ import {
     ChartTooltip,
     ChartTooltipContent,
 } from "@/components/ui/chart"
+import { useTranslation } from "react-i18next"
 
 const chartData = [
     { month: "Jan", revenue: 4000, expenses: 2400 },
@@ -28,14 +29,15 @@ const chartConfig = {
 } satisfies ChartConfig
 
 function RevenueExpensesChart() {
+    const { t } = useTranslation();
     return (
-        <Card>
-            <CardHeader>
-                <CardTitle>Financial Overview</CardTitle>
+        <Card className="border-white! border" >
+            <CardHeader className="dark:text-white" >
+                <CardTitle>{t("dashboard.revenue_analysis")}</CardTitle>
                 <CardDescription>Monthly Revenue vs Expenses</CardDescription>
             </CardHeader>
-            <CardContent>
-                <ChartContainer config={chartConfig} className="min-h-[200px] w-full">
+            <CardContent >
+                <ChartContainer config={chartConfig} className="min-h-50 w-full">
                     <BarChart data={chartData}>
                         <CartesianGrid vertical={false} />
                         <XAxis dataKey="month" tickLine={false} tickMargin={10} axisLine={false} />

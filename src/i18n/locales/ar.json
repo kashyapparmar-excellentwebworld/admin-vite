@@ -463,7 +463,8 @@
     "yesterday": "الأمس",
     "previous_n_days": "الـ {{n}} أيام السابقة",
     "total_all_time": "الإجمالي الكلي",
-    "vs_previous_period": "مقابل {{label}} ({{value}})"
+    "vs_previous_period": "مقابل {{label}} ({{value}})",
+    "active_users_growth": "نمو عدد المستخدمين النشطين"
   },
   "customers": {
     "title": "العملاء",

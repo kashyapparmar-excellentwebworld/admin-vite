@@ -12,6 +12,7 @@ import {
     ChartTooltip,
     ChartTooltipContent,
 } from "@/components/ui/chart"
+import { useTranslation } from "react-i18next"
 
 const chartData = [
     { month: "Jan", activeUsers: 1200 },
@@ -27,14 +28,15 @@ const chartConfig = {
 } satisfies ChartConfig
 
 function UserGrowthChart() {
+    const { t } = useTranslation();
     return (
-        <Card>
-            <CardHeader>
-                <CardTitle>Active Users Growth</CardTitle>
+        <Card className="border-white! border" >
+            <CardHeader className="dark:text-white" >
+                <CardTitle>{t("dashboard.active_users_growth")}</CardTitle>
                 <CardDescription>Total active users over the last 6 months</CardDescription>
             </CardHeader>
             <CardContent>
-                <ChartContainer config={chartConfig} className="min-h-[200px] w-full">
+                <ChartContainer config={chartConfig} className="min-h-50 w-full">
                     <AreaChart data={chartData}>
                         <defs>
                             <linearGradient id="fillUsers" x1="0" y1="0" x2="0" y2="1">

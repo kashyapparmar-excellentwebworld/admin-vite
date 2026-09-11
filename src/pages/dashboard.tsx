@@ -7,28 +7,49 @@ export default function Home() {
     <div className="p-4 flex flex-col gap-2">
       <Card className="flex flex-col gap-8">
         <h1 className="text-xl font-bold dark:text-white">{t("common.dashboard")}</h1>
-        <div className="flex justify-evenly" >
-          <div className="flex flex-col items-start justify-end border-4 border-gray-200 rounded-lg p-4 w-50 h-30" >
-            <p className="text-start text-2xl font-bold w-full" >2500</p>
-            <p>Total Revemue</p>
+      </Card>
+      <div className="flex justify-between" >
+        <Card className="flex flex-col gap-8 w-fit! bg-green-500! text-white">
+          <div className="flex justify-evenly" >
+            <div className="flex flex-col items-start justify-end rounded-lg p-4 w-50 h-30" >
+              <p className="text-start text-2xl font-bold w-full" >₹250k</p>
+              <p>Total Profit</p>
+            </div>
           </div>
-          <div className="border-4 border-gray-200 rounded-lg p-8 w-50 h-30" >
-
+        </Card>
+        <Card className="flex flex-col gap-8 w-fit!  bg-blue-500! text-white">
+          <div className="flex justify-evenly" >
+            <div className="flex flex-col items-start justify-end rounded-lg p-4 w-50 h-30" >
+              <p className="text-start text-2xl font-bold w-full" >₹4M</p>
+              <p>Total sales</p>
+            </div>
           </div>
-          <div className="border-4 border-gray-200 rounded-lg p-8 w-50 h-30" >
-
+        </Card>
+        <Card className="flex flex-col gap-8 w-fit!  bg-yellow-500! text-white">
+          <div className="flex justify-evenly" >
+            <div className="flex flex-col items-start justify-end rounded-lg p-4 w-50 h-30" >
+              <p className="text-start text-2xl font-bold w-full" >₹45K</p>
+              <p>Ad sense spends</p>
+            </div>
           </div>
-          <div className="border-4 border-gray-200 rounded-lg p-8 w-50 h-30" >
-
+        </Card>
+        <Card className="flex flex-col gap-8 w-fit!  bg-red-500! text-white">
+          <div className="flex justify-evenly" >
+            <div className="flex flex-col items-start justify-end rounded-lg p-4 w-50 h-30" >
+              <p className="text-start text-2xl font-bold w-full" >₹6M</p>
+              <p>Total Revenue</p>
+            </div>
           </div>
-        </div>
-        {/* </Card>
-      <Card className="flex flex-col gap-8 p-8"> */}
-        <div className="flex justify-between gap-8 " >
+        </Card>
+      </div>
+      <div className="flex justify-between gap-8 " >
+        <Card className="flex flex-col gap-8 p-8">
           <RevenueExpensesChart />
+        </Card >
+        <Card className="flex flex-col gap-8 p-8">
           <UserGrowthChart />
-        </div>
-      </Card >
+        </Card >
+      </div>
     </div>
   )
 }
