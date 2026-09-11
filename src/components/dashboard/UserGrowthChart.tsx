@@ -33,7 +33,7 @@ function UserGrowthChart() {
         <Card className="border-white! border" >
             <CardHeader className="dark:text-white" >
                 <CardTitle>{t("dashboard.active_users_growth")}</CardTitle>
-                <CardDescription>Total active users over the last 6 months</CardDescription>
+                <CardDescription>{t("dashboard.tota_active_users_month", { month: 6 })}</CardDescription>
             </CardHeader>
             <CardContent>
                 <ChartContainer config={chartConfig} className="min-h-50 w-full">

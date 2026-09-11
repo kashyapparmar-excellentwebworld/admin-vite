@@ -1,6 +1,7 @@
 {
   "common": {
     "dashboard": "لوحة القيادة",
+    "go_home": "العودة إلى الصفحة الرئيسية",
     "upload_title": "تحميل ملف المنتج",
     "dnd_title": "اسحب ملفك وأفلته هنا، أو",
     "browse": "تصفح",
@@ -464,7 +465,15 @@
     "previous_n_days": "الـ {{n}} أيام السابقة",
     "total_all_time": "الإجمالي الكلي",
     "vs_previous_period": "مقابل {{label}} ({{value}})",
-    "active_users_growth": "نمو عدد المستخدمين النشطين"
+    "active_users_growth": "نمو عدد المستخدمين النشطين",
+    "tota_active_users_month": "إجمالي المستخدمين النشطين خلال الأشهر الـ {{month}} الماضية",
+    "monthly_revenue_Expenses": "الإيرادات الشهرية مقابل النفقات",
+    "card": {
+      "total_revenue": "إجمالي الإيرادات",
+      "ad_sense_spends": "إنفاق AdSense",
+      "total_sales": "إجمالي المبيعات",
+      "total_profit": "إجمالي الربح"
+    }
   },
   "customers": {
     "title": "العملاء",

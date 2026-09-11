@@ -1,6 +1,7 @@
 {
   "common": {
     "dashboard": "Dashboard",
+    "go_home": "Go Home",
     "upload_title": "Upload product file",
     "dnd_title": "Drag and drop your file here, or",
     "browse": "browse",
@@ -464,7 +465,15 @@
     "previous_n_days": "previous {{n}} days",
     "total_all_time": "Total all time",
     "vs_previous_period": "vs {{label}} ({{value}})",
-    "active_users_growth": "Active Users Growth"
+    "active_users_growth": "Active Users Growth",
+    "tota_active_users_month": "Total active users over the last {{month}} months",
+    "monthly_revenue_Expenses": "Monthly Revenue vs Expenses",
+    "card": {
+      "total_revenue": "Total Revenue",
+      "ad_sense_spends": "Ad sense spends",
+      "total_sales": "Total sales",
+      "total_profit": "Total Profit"
+    }
   },
   "customers": {
     "title": "Customers",

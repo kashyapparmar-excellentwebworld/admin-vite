@@ -34,7 +34,7 @@ function RevenueExpensesChart() {
         <Card className="border-white! border" >
             <CardHeader className="dark:text-white" >
                 <CardTitle>{t("dashboard.revenue_analysis")}</CardTitle>
-                <CardDescription>Monthly Revenue vs Expenses</CardDescription>
+                <CardDescription>{t("dashboard.monthly_revenue_Expenses")}</CardDescription>
             </CardHeader>
             <CardContent >
                 <ChartContainer config={chartConfig} className="min-h-50 w-full">

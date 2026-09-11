@@ -13,7 +13,7 @@ export default function Home() {
           <div className="flex justify-evenly" >
             <div className="flex flex-col items-start justify-end rounded-lg p-4 w-50 h-30" >
               <p className="text-start text-2xl font-bold w-full" >₹250k</p>
-              <p>Total Profit</p>
+              <p>{t("dashboard.card.total_profit")}</p>
             </div>
           </div>
         </Card>
@@ -21,7 +21,7 @@ export default function Home() {
           <div className="flex justify-evenly" >
             <div className="flex flex-col items-start justify-end rounded-lg p-4 w-50 h-30" >
               <p className="text-start text-2xl font-bold w-full" >₹4M</p>
-              <p>Total sales</p>
+              <p>{t("dashboard.card.total_sales")}</p>
             </div>
           </div>
         </Card>
@@ -29,7 +29,7 @@ export default function Home() {
           <div className="flex justify-evenly" >
             <div className="flex flex-col items-start justify-end rounded-lg p-4 w-50 h-30" >
               <p className="text-start text-2xl font-bold w-full" >₹45K</p>
-              <p>Ad sense spends</p>
+              <p>{t("dashboard.card.ad_sense_spends")}</p>
             </div>
           </div>
         </Card>
@@ -37,7 +37,7 @@ export default function Home() {
           <div className="flex justify-evenly" >
             <div className="flex flex-col items-start justify-end rounded-lg p-4 w-50 h-30" >
               <p className="text-start text-2xl font-bold w-full" >₹6M</p>
-              <p>Total Revenue</p>
+              <p>{t("dashboard.card.total_revenue")}</p>
             </div>
           </div>
         </Card>
