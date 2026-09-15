@@ -224,7 +224,8 @@
     "system_settings": "إعدادات النظام",
     "section_manage": "إدارة",
     "section_reports": "تقارير",
-    "section_settings": "إعدادات"
+    "section_settings": "إعدادات",
+    "ai_integration": "دمج الذكاء الاصطناعي"
   },
   "tickets": {
     "title": "تذاكر الدعم ومحرك التعيين التلقائي",
@@ -2083,5 +2084,10 @@
     "next": "التالي",
     "prev": "السابق",
     "no_record": "لم يتم العثور على سجلات."
+  },
+  "ai_integration": {
+    "your_chats": "دردشاتك",
+    "new_chat": "دردشة جديدة",
+    "your_message": "رسالتك"
   }
 }

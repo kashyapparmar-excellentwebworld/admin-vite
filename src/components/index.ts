@@ -12,3 +12,5 @@ export { default as TablePagination } from "./table/TablePagination";
 export { default as UploadFile } from "./ui/upload";
 export { default as RevenueExpensesChart } from "./dashboard/RevenueExpensesChart";
 export { default as UserGrowthChart } from "./dashboard/UserGrowthChart";
+export { default as AiChatList } from "./aiIntegration/aiChatList";
+export { default as AiChat } from "./aiIntegration/aiChat";

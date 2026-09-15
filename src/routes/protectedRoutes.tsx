@@ -1,6 +1,7 @@
 import { lazy, Suspense } from "react";
 import { ProtectedRoute } from "./ProtectedRoute";
 import { Loader } from "@/components";
+import { AiIntegration } from "@/pages";
 
 const Dashboard = lazy(() => import("@/pages/dashboard"))
 const MainLayout = lazy(() => import("@/layouts/index"))
@@ -34,6 +35,14 @@ export const protectedRoutes = {
                     element: (
                         <Suspense fallback={<Loader />}>
                             <ProductManagement />
+                        </Suspense>
+                    ),
+                },
+                {
+                    path: "ai",
+                    element: (
+                        <Suspense fallback={<Loader />}>
+                            <AiIntegration />
                         </Suspense>
                     ),
                 },

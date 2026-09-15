@@ -190,7 +190,7 @@
     "admin_panel": "Admin Panel",
     "dashboard": "Dashboard",
     "buyers": "Buyers",
-    "users": "User Management",
+    "users": "Users",
     "suppliers": "Suppliers",
     "kyc_approvals": "KYC",
     "products_categories": "Products",
@@ -224,7 +224,8 @@
     "system_settings": "System Settings",
     "section_manage": "Manage",
     "section_reports": "Reports",
-    "section_settings": "Settings"
+    "section_settings": "Settings",
+    "ai_integration": "AI Integration"
   },
   "tickets": {
     "title": "Support Tickets & Auto-Assignment Engine",
@@ -2104,5 +2105,10 @@
     "next": "next",
     "prev": "Prev",
     "no_record": "No records found."
+  },
+  "ai_integration": {
+    "your_chats": "Your Chats",
+    "new_chat": "New Chat",
+    "your_message": "Your message"
   }
 }

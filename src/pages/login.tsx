@@ -40,7 +40,7 @@ const Login = () => {
                     accessToken: "response.data.accessToken",
                     refreshToken: "response.data.refreshToken",
                     rememberMe: true,
-                })
+                }),
             );
             reset()
         }

@@ -18,24 +18,31 @@ const sidebarOptions = [
         slug: "/users",
     },
     {
-        label: "Dashboard",
+        label: "Products",
         translationKey: "sidebar.products",
         path: "/products",
         icon: "ant-design:shopping-cart-outlined",
         slug: "/",
     },
+    // {
+    //     label: "Buyers",
+    //     translationKey: "sidebar.buyers",
+    //     path: "/buyers",
+    //     icon: "icon-park-outline:buy",
+    //     slug: "/",
+    // },
+    // {
+    //     label: "Reports",
+    //     translationKey: "sidebar.reports",
+    //     path: "/reports",
+    //     icon: "iconoir:reports",
+    //     slug: "/",
+    // },
     {
-        label: "Dashboard",
-        translationKey: "sidebar.buyers",
-        path: "/buyers",
-        icon: "icon-park-outline:buy",
-        slug: "/",
-    },
-    {
-        label: "Dashboard",
-        translationKey: "sidebar.reports",
-        path: "/reports",
-        icon: "iconoir:reports",
+        label: "AI integration",
+        translationKey: "sidebar.ai_integration",
+        path: "/ai",
+        icon: "codicon:robot",
         slug: "/",
     },
 ]
@@ -45,7 +52,7 @@ const Sidebar = () => {
     const { pathname } = useLocation();
 
     return (
-        <div id="sidebar" className="w-full max-w-70 shadow-2xl dark:bg-black/90 text-white min-h-screen">
+        <div id="sidebar" className="w-full max-w-60 shadow-2xl dark:bg-black/90 text-white min-h-screen">
             <div className="w-full flex justify-center py-4 ps-8 min-h-20 items-center" >
                 <Icon
                     icon={"arcticons:google-admin"}
@@ -61,7 +68,7 @@ const Sidebar = () => {
                     <Link
                         key={idx}
                         to={el?.path}
-                        className={`${pathname === el?.path ? "bg-gray-500 text-white" : ""} py-1 ps-4 rounded-lg w-full outline-0 flex items-center gap-2`}
+                        className={`${pathname === el?.path ? "bg-gray-500 text-white dark:text-black" : ""} py-1 ps-4 rounded-lg w-full outline-0 flex items-center gap-2`}
                     >
                         <Icon icon={el?.icon} fontSize={20} />
                         {t(el?.translationKey)}

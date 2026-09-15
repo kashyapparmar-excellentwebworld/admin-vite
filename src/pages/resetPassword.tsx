@@ -24,15 +24,18 @@ const ResetPassword = () => {
     });
 
     const onSubmit = async (data: resetPasswordType) => {
-        if (data?.oldPassword !== validCreds?.password) {
-            setError("oldPassword", { message: "Old Password does not matched" })
-            return
-        }
         if (data?.email !== validCreds?.email) {
             setError("email", { message: "Email does not matched" })
             return
         }
-        reset()
+        if (data?.oldPassword !== validCreds?.password) {
+            setError("oldPassword", { message: "Old Password does not matched" })
+            return
+        }
+        if (data?.oldPassword === data?.newPassword) {
+            setError("newPassword", { message: "Old password and new password cannot be same" })
+            return
+        }
         dispatch(
             login({
                 admin: data,
@@ -41,6 +44,7 @@ const ResetPassword = () => {
                 rememberMe: true,
             }),
         );
+        reset()
     };
 
     return (
