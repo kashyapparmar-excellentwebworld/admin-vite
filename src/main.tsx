@@ -14,7 +14,7 @@ createRoot(document.getElementById('root')!).render(
   <StrictMode>
     <Provider store={store}>
       <PersistGate loading={null} persistor={persistor}>
-        <ThemeProvider defaultTheme="light">
+        <ThemeProvider defaultTheme="system">
           <Suspense
             fallback={
               <div className="h-screen flex items-center justify-center bg-white">
